@@ -8,7 +8,7 @@ const Login = () => {
     e.preventDefault()
     localStorage.setItem("userID",userID)
     localStorage.setItem("password",pass)
-    if(userID == "" || pass == "")
+    if(userID === "" || pass === "")
     {
       alert("userID and Password both are required")
     }
