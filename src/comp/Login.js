@@ -6,7 +6,7 @@ const Login = () => {
   var [pass,setPass] = useState()
   const handleSubmit = (e) =>{
     e.preventDefault()
-    if(userID.length == 0 || pass.length == 0)
+    if(userID === " " || pass === " ")
     {
       alert("userID and Password both are required")
     }
