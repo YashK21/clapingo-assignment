@@ -6,8 +6,6 @@ const Login = () => {
   var [pass,setPass] = useState()
   const handleSubmit = (e) =>{
     e.preventDefault()
-    localStorage.setItem("userID",userID)
-    localStorage.setItem("password",pass)
     if(userID === "" || pass === "")
     {
       alert("userID and Password both are required")
@@ -15,7 +13,8 @@ const Login = () => {
     else
     {
     alert("Logged in successfully!")
-
+    localStorage.setItem("userID",userID)
+    localStorage.setItem("password",pass)
   }
   }
   
